@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+</head>
+<body>
+
+    <h1>Order Food</h1>
+
+    <form action="/checkout" method="post">
+
+        <label>Burgers ($3.00):</label>
+        <input type="number" name="burgers" value="0" min="0"><br><br>
+
+        <label>Fries ($1.50):</label>
+        <input type="number" name="fries" value="0" min="0"><br><br>
+
+        <label>Drinks ($1.00):</label>
+        <input type="number" name="drinks" value="0" min="0"><br><br>
+
+        <h3>Choose Payment Method</h3>
+
+        <input type="radio" name="paymentMethod" value="paypal" required>
+        <label>PayPal</label><br>
+
+        <input type="radio" name="paymentMethod" value="stripe" required>
+        <label>Stripe</label><br><br>
+
+        <button type="submit">Checkout</button>
+
+    </form>
+
+</body>
+</html>
